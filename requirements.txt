@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pymongo
+langchain
+langchain-groq
+faiss-cpu
+python-dotenv
+requests
+beautifulsoup4
