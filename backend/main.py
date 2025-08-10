@@ -16,7 +16,7 @@ app.mount("/static", StaticFiles(directory=static_dir), name="static")
 
 @app.get("/{full_path:path}")
 async def serve_frontend(full_path: str):
-    index_path = os.path.join("static", "index.html")
+    index_path = os.path.join(static_dir, "index.html")
     return FileResponse(index_path)
 
 # CORS Middleware
