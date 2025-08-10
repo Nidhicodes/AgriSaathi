@@ -38,21 +38,6 @@ function App() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
     const location = useLocation();
 
-    useEffect(() => {
-        const fetchWeather = async () => {
-            if (pincode && locationDetails) {
-                try {
-                    const weatherData = await api.getWeather(pincode);
-                    setWeather(weatherData);
-                } catch (error) {
-                    console.error("Failed to fetch weather for header:", error);
-                    setWeather(null);
-                }
-            }
-        };
-        fetchWeather();
-    }, [pincode, locationDetails, setWeather]);
-
     // Close sidebar on route change on mobile
     useEffect(() => {
         setIsSidebarOpen(false);

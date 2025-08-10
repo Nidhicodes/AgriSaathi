@@ -15,7 +15,7 @@ const EquipmentList = () => {
         try {
             setLoading(true);
             const data = await api.getEquipmentList();
-            setEquipment(data);
+            setEquipment(data.equipment || []);
         } catch (err) {
             setError(err.message);
         } finally {

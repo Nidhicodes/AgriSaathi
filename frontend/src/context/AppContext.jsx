@@ -31,6 +31,20 @@ export const AppProvider = ({ children }) => {
     };
 
     useEffect(() => {
+        const fetchInitialData = async () => {
+            if (pincode) {
+                try {
+                    const weatherData = await api.getWeather(pincode);
+                    setWeather(weatherData);
+                } catch (error) {
+                    console.error("Failed to fetch initial weather data:", error);
+                }
+            }
+        };
+        fetchInitialData();
+    }, []);
+
+    useEffect(() => {
         if (chats.length === 0) {
             const newChatId = uuidv4();
             setChats([
@@ -56,21 +70,19 @@ export const AppProvider = ({ children }) => {
         setError(null);
         
         try {
-            
             const location = await api.getLocationDetails(newPincode);
-            
-            setPincode(newPincode);
-            setLocationDetails(location);
-
             const [weather, market] = await Promise.all([
                 api.getWeather(newPincode),
                 api.getMarketData(newPincode)
             ]);
-
+            
+            setPincode(newPincode);
+            setLocationDetails(location);
             setWeather(weather);
-            setMarketData(market.market_data || []); 
+            setMarketData(market.market_data || []);
         } catch (err) {
             setError(err.message || "Failed to fetch data for the new pincode.");
+            // Clear data on error
             setLocationDetails(null);
             setWeather(null);
             setMarketData([]);
