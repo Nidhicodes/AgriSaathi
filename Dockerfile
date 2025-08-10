@@ -12,6 +12,6 @@ RUN npm install && npm run build
 FROM python:3.11-slim
 WORKDIR /app
 COPY --from=backend /app /app
-COPY --from=frontend /app/backend/static /app/backend/static
+COPY --from=frontend /app/frontend/build /app/backend/static
 
 CMD ["uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "8000"]
