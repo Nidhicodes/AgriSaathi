@@ -1,0 +1,122 @@
+[
+  {
+    "scheme_name": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)",
+    "category": "Financial Support",
+    "description": "A central sector scheme to supplement the financial needs of land-holding farmers. A benefit of ₹6000 per year is transferred in three equal installments directly into the bank accounts of farmers' families."
+  },
+  {
+    "scheme_name": "Pradhan Mantri Kisan MaanDhan Yojana (PM-KMY)",
+    "category": "Pension Scheme",
+    "description": "A contributory pension scheme for small and marginal farmers. Farmers contribute a monthly amount (between ₹55 to ₹200 depending on age) until they are 60, and the Central Government contributes a matching amount. Provides a monthly pension of ₹3,000 after the age of 60."
+  },
+  {
+    "scheme_name": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+    "category": "Insurance",
+    "description": "An affordable crop insurance product providing comprehensive risk cover for crops against all non-preventable natural risks from pre-sowing to post-harvest."
+  },
+  {
+    "scheme_name": "Modified Interest Subvention Scheme (MISS)",
+    "category": "Financial Support",
+    "description": "Provides concessional short-term agri-loans up to ₹3.00 lakh at a 7% interest rate. An additional 3% subvention is given for prompt repayment, reducing the effective rate to 4%. Also available for post-harvest loans against Negotiable Warehouse Receipts (NWRs)."
+  },
+  {
+    "scheme_name": "Agriculture Infrastructure Fund (AIF)",
+    "category": "Infrastructure",
+    "description": "A medium- to long-term debt financing facility for investment in post-harvest management infrastructure and community farming assets. Provides loans with a 3% interest subvention and credit guarantee coverage."
+  },
+  {
+    "scheme_name": "Formation & Promotion of 10,000 FPOs",
+    "category": "Community Development",
+    "description": "A scheme to form and promote 10,000 Farmer Producer Organizations (FPOs). Provides financial assistance and matching equity grants to FPOs to improve farmers' collective strength."
+  },
+  {
+    "scheme_name": "National Beekeeping and Honey Mission (NBHM)",
+    "category": "Allied Activities",
+    "description": "Promotes and develops scientific beekeeping to achieve the goal of a 'Sweet Revolution'. Includes initiatives for honey testing labs, online registration of beekeepers, and promoting Honey FPOs."
+  },
+  {
+    "scheme_name": "Market Intervention Scheme and Price Support Scheme (MIS-PSS)",
+    "category": "Market Support",
+    "description": "Protects growers of perishable agricultural and horticultural commodities from making distress sales during bumper crops by procuring these commodities when prices fall below economic levels."
+  },
+  {
+    "scheme_name": "Namo Drone Didi",
+    "category": "Technology & Mechanization",
+    "description": "Provides drones to Women Self Help Groups (SHGs) to offer rental services to farmers for applying fertilizers and pesticides. Includes a subsidy of up to 80% on the cost of the drone."
+  },
+  {
+    "scheme_name": "Rashtriya Krishi Vikas Yojana (RKVY)",
+    "category": "Infrastructure",
+    "description": "Focuses on creating pre and post-harvest infrastructure. Provides flexibility to states to implement projects based on local needs, aiming to increase the overall growth of agriculture and allied sectors."
+  },
+  {
+    "scheme_name": "Soil Health Card (SHC)",
+    "category": "Soil Health",
+    "description": "Provides farmers with information on the nutrient status of their soil and recommends appropriate dosages of nutrients to improve soil health and fertility."
+  },
+  {
+    "scheme_name": "Rainfed Area Development (RAD)",
+    "category": "Farming Systems",
+    "description": "Promotes Integrated Farming Systems (IFS) in rainfed areas, focusing on multi-cropping, rotational cropping, and allied activities like horticulture and livestock to mitigate the impacts of drought and other weather events."
+  },
+  {
+    "scheme_name": "Per Drop More Crop (PDMC)",
+    "category": "Irrigation",
+    "description": "Aims to increase water use efficiency at the farm level through micro-irrigation technologies like drip and sprinkler systems. Also supports micro-level water harvesting and storage."
+  },
+  {
+    "scheme_name": "Paramparagat Krishi Vikas Yojana (PKVY)",
+    "category": "Organic Farming",
+    "description": "Promotes organic farming in clusters to increase soil fertility and produce healthy food without using agro-chemicals. Provides financial assistance to farmers for organic inputs."
+  },
+  {
+    "scheme_name": "Sub-Mission on Agriculture Mechanization (SMAM)",
+    "category": "Technology & Mechanization",
+    "description": "Aims to increase the reach of farm mechanization to small and marginal farmers by promoting Custom Hiring Centres (CHCs) and creating hubs for high-tech farm equipment."
+  },
+  {
+    "scheme_name": "Crop Residue Management (CRM)",
+    "category": "Sustainable Practices",
+    "description": "Promotes in-situ management of crop residue to prevent air pollution from stubble burning. Supports the creation of Farm Machinery Banks for custom hiring of residue management machinery."
+  },
+  {
+    "scheme_name": "National Food Security Mission (NFSM)",
+    "category": "Food Security",
+    "description": "Aims to increase the production of rice, wheat, pulses, and coarse cereals through area expansion and productivity enhancement in a sustainable manner."
+  },
+  {
+    "scheme_name": "National Mission on Edible Oils (NMEO)-Oil Palm",
+    "category": "Crop Specific",
+    "description": "Promotes oil palm cultivation to make the country self-reliant in edible oils, with a special focus on North-Eastern states."
+  },
+  {
+    "scheme_name": "Mission for Integrated Development of Horticulture (MIDH)",
+    "category": "Horticulture",
+    "description": "Promotes the holistic growth of the horticulture sector, covering fruits, vegetables, spices, flowers, and other specialty crops. Supports infrastructure development, new orchards, and post-harvest management."
+  },
+  {
+    "scheme_name": "National Bamboo Mission (NBM)",
+    "category": "Allied Activities",
+    "description": "Focuses on the development of the complete value chain of the bamboo sector, linking growers with consumers through a cluster approach."
+  },
+  {
+    "scheme_name": "Integrated Scheme for Agriculture Marketing (ISAM)",
+    "category": "Market Support",
+    "description": "Supports state governments in improving agricultural produce marketing through the creation of market structures and access to market information. Includes the e-NAM platform."
+  },
+  {
+    "scheme_name": "Mission Organic Value Chain Development for North Eastern Region (MOVCDNER)",
+    "category": "Organic Farming",
+    "description": "Develops certified organic production clusters in a value chain mode in India's North-Eastern states to link growers with consumers."
+  },
+  {
+    "scheme_name": "Sub-Mission on Agriculture Extension (SMAE)",
+    "category": "Community Development",
+    "description": "Aims to make the agricultural extension system farmer-driven and accountable by disseminating technology through Agricultural Technology Management Agencies (ATMA) at the district level."
+  },
+  {
+    "scheme_name": "Digital Agriculture Mission",
+    "category": "Technology & Mechanization",
+    "description": "Aims to build a digital public infrastructure for agriculture (AgriStack) to enable inclusive, farmer-centric solutions through information services for crop planning, input access, credit, and market intelligence."
+  }
+]

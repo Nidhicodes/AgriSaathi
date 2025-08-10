@@ -1,0 +1,62 @@
+{
+  "header": {
+    "title": "AgriSaathi",
+    "subtitle": "Your AI-powered agricultural advisor",
+    "weather_prompt": "Set pincode for weather"
+  },
+  "nav": {
+    "chat": "Chat",
+    "agri_share": "Agri-Share"
+  },
+  "chat": {
+    "placeholder": "Ask a question...",
+    "pincode_placeholder": "Enter your 6-digit pincode...",
+    "pincode_button": "Set",
+    "pincode_error": "Please enter a valid 6-digit pincode.",
+    "api_error": "Sorry, something went wrong. Please try again."
+  },
+  "agri_share": {
+    "list_equipment_title": "List Your Equipment",
+    "form": {
+        "name": "Equipment Name",
+        "description": "Description",
+        "price": "Price per day (₹)",
+        "pincode": "Pincode",
+        "contact_info": "Contact Information",
+        "contact_name": "Contact Name",
+        "phone": "Phone Number",
+        "whatsapp": "WhatsApp Number (Optional)",
+        "images": "Equipment Images",
+        "upload_images": "Upload Images",
+        "list_button": "List Equipment",
+        "image_error": "Please select at least one image.",
+        "success_message": "Equipment listed successfully!"
+    },
+    "card": {
+        "no_image": "No Image",
+        "photos": "photos",
+        "per_day": "/day",
+        "contact": "Contact",
+        "phone": "Phone",
+        "whatsapp": "WhatsApp"
+    },
+    "gallery": {
+        "title": "Image Gallery"
+    },
+    "list": {
+        "title": "Rent Farming Equipment",
+        "subtitle": "Find the tools you need from fellow farmers in your area.",
+        "pincode_label": "Enter your pincode to find equipment:",
+        "pincode_placeholder": "6-digit pincode",
+        "search_button": "Search",
+        "no_equipment_found": "No equipment found for this pincode.",
+        "list_your_own": "List Your Own Equipment",
+        "available_equipment": "Available Equipment",
+        "list_your_equipment_button": "List Your Equipment",
+        "cancel": "Cancel",
+        "loading": "Loading...",
+        "error_prefix": "Error",
+        "no_equipment_available": "No equipment available"
+    }
+  }
+}

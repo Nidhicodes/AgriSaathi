@@ -1,0 +1,16 @@
+[
+  {
+    "crop": "Wheat",
+    "best_season": "Rabi",
+    "ideal_soil": "Loam",
+    "irrigation_interval_days": 10,
+    "region": ["Punjab", "UP", "Haryana"]
+  },
+  {
+    "crop": "Rice",
+    "best_season": "Kharif",
+    "ideal_soil": "Clay",
+    "irrigation_interval_days": 7,
+    "region": ["WB", "Odisha", "AP"]
+  }
+]

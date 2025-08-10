@@ -1,0 +1,51 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.so
+*.egg-info/
+*.eggs/
+.Python
+env/
+venv/
+backend/venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Ignore Python cache & build artifacts
+build/
+dist/
+.eggs/
+*.egg-info/
+*.egg
+
+# ---- Node.js ----
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ---- Environment ----
+.env
+*.env.*
+
+# ---- VS Code ----
+.vscode/
+.history/
+
+# ---- OS Files ----
+.DS_Store
+Thumbs.db
+
+# ---- Data & Indexes ----
+data/faiss_index/
+*.jsonl
+*.sqlite
+*.db
+
+# ---- Logs ----
+*.log
+logs/

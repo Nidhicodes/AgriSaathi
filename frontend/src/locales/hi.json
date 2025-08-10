@@ -1,0 +1,62 @@
+{
+  "header": {
+    "title": "एग्रीसाथी",
+    "subtitle": "आपका AI-संचालित कृषि सलाहकार",
+    "weather_prompt": "मौसम के लिए पिनकोड सेट करें"
+  },
+  "nav": {
+    "chat": "चैट",
+    "agri_share": "एग्री-शेयर"
+  },
+  "chat": {
+    "placeholder": "प्रश्न पूछें...",
+    "pincode_placeholder": "अपना 6-अंकीय पिनकोड दर्ज करें...",
+    "pincode_button": "सेट करें",
+    "pincode_error": "कृपया एक वैध 6-अंकीय पिनकोड दर्ज करें।",
+    "api_error": "क्षमा करें, कुछ गलत हो गया। कृपया पुन: प्रयास करें।"
+  },
+  "agri_share": {
+    "list_equipment_title": "अपने उपकरण सूचीबद्ध करें",
+    "form": {
+      "name": "उपकरण का नाम",
+      "description": "विवरण",
+      "price": "प्रति दिन मूल्य (₹)",
+      "pincode": "पिनकोड",
+      "contact_info": "संपर्क जानकारी",
+      "contact_name": "संपर्क नाम",
+      "phone": "फ़ोन नंबर",
+      "whatsapp": "व्हाट्सएप नंबर (वैकल्पिक)",
+      "images": "उपकरण की छवियाँ",
+      "upload_images": "छवियाँ अपलोड करें",
+      "list_button": "उपकरण सूचीबद्ध करें",
+      "image_error": "कृपया कम से-कम एक छवि चुनें।",
+      "success_message": "उपकरण सफलतापूर्वक सूचीबद्ध हो गया!"
+    },
+    "card": {
+      "no_image": "कोई छवि नहीं",
+      "photos": "तस्वीरें",
+      "per_day": "/दिन",
+      "contact": "संपर्क",
+      "phone": "फ़ोन",
+      "whatsapp": "व्हाट्सएप"
+    },
+    "gallery": {
+      "title": "छवि गैलरी"
+    },
+    "list": {
+      "title": "खेती के उपकरण किराए पर लें",
+      "subtitle": "अपने क्षेत्र के साथी किसानों से अपनी जरूरत के उपकरण खोजें।",
+      "pincode_label": "उपकरण खोजने के लिए अपना पिनकोड दर्ज करें:",
+      "pincode_placeholder": "6-अंकीय पिनकोड",
+      "search_button": "खोजें",
+      "no_equipment_found": "इस पिनकोड के लिए कोई उपकरण नहीं मिला।",
+      "list_your_own": "अपने उपकरण सूचीबद्ध करें",
+      "available_equipment": "उपलब्ध उपकरण",
+      "list_your_equipment_button": "अपने उपकरण सूचीबद्ध करें",
+      "cancel": "रद्द करें",
+      "loading": "लोड हो रहा है...",
+      "error_prefix": "त्रुटि",
+      "no_equipment_available": "कोई उपकरण उपलब्ध नहीं है"
+    }
+  }
+}
