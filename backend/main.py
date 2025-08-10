@@ -1,18 +1,15 @@
 import os
-from fastapi import FastAPI, Request, HTTPException
+from fastapi import FastAPI, HTTPException
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
-from starlette.responses import JSONResponse
 from starlette.status import HTTP_404_NOT_FOUND
+from starlette.middleware.base import BaseHTTPMiddleware
+from starlette.requests import Request
+from starlette.responses import Response
 
 from .routes import query, market, weather, schemes, agri_share, location
 from .db import client
-from dotenv import load_dotenv
-
-from starlette.middleware.base import BaseHTTPMiddleware
-from starlette.requests import Request
-from starlette.responses import Response, FileResponse
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -30,15 +27,15 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# === CSP Middleware ===
 class CSPMiddleware(BaseHTTPMiddleware):
     async def dispatch(self, request: Request, call_next):
         response: Response = await call_next(request)
 
-        # Define CSP policy string
         csp_policy = (
             "default-src 'self'; "
             "script-src 'self' https://agrisaathi.onrender.com 'unsafe-inline'; "
+            "script-src-elem 'self' https://agrisaathi.onrender.com; "
+            "script-src-attr 'self' https://agrisaathi.onrender.com 'unsafe-inline'; "
             "style-src 'self' https://agrisaathi.onrender.com 'unsafe-inline'; "
             "img-src 'self' data: https://agrisaathi.onrender.com; "
             "font-src 'self'; "
@@ -53,15 +50,6 @@ class CSPMiddleware(BaseHTTPMiddleware):
         return response
 
 app.add_middleware(CSPMiddleware)
-
-
-# app.add_middleware(
-#     CORSMiddleware,
-#     allow_origins=["*"],  
-#     allow_credentials=True,
-#     allow_methods=["*"],
-#     allow_headers=["*"],
-# )
 
 app.include_router(query.router, prefix="/api/query")
 app.include_router(weather.router, prefix="/api/weather")
