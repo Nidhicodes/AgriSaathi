@@ -10,21 +10,58 @@ from .routes import query, market, weather, schemes, agri_share, location
 from .db import client
 from dotenv import load_dotenv
 
+from starlette.middleware.base import BaseHTTPMiddleware
+from starlette.requests import Request
+from starlette.responses import Response, FileResponse
+from dotenv import load_dotenv
+
 load_dotenv()
 
 app = FastAPI()
 
 static_dir = os.path.join(os.path.dirname(__file__), "static")
-os.makedirs(os.path.join(static_dir, "uploads"), exist_ok=True)
 app.mount("/static", StaticFiles(directory=static_dir), name="static")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  
+    allow_origins=["https://agrisaathi.onrender.com"],  
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# === CSP Middleware ===
+class CSPMiddleware(BaseHTTPMiddleware):
+    async def dispatch(self, request: Request, call_next):
+        response: Response = await call_next(request)
+
+        # Define CSP policy string
+        csp_policy = (
+            "default-src 'self'; "
+            "script-src 'self' https://agrisaathi.onrender.com 'unsafe-inline'; "
+            "style-src 'self' https://agrisaathi.onrender.com 'unsafe-inline'; "
+            "img-src 'self' data: https://agrisaathi.onrender.com; "
+            "font-src 'self'; "
+            "connect-src 'self' https://agrisaathi.onrender.com; "
+            "frame-src 'self'; "
+            "object-src 'none'; "
+            "base-uri 'self'; "
+            "form-action 'self';"
+        )
+
+        response.headers['Content-Security-Policy'] = csp_policy
+        return response
+
+app.add_middleware(CSPMiddleware)
+
+
+# app.add_middleware(
+#     CORSMiddleware,
+#     allow_origins=["*"],  
+#     allow_credentials=True,
+#     allow_methods=["*"],
+#     allow_headers=["*"],
+# )
 
 app.include_router(query.router, prefix="/api/query")
 app.include_router(weather.router, prefix="/api/weather")
