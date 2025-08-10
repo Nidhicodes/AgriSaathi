@@ -16,8 +16,9 @@ app.mount("/static", StaticFiles(directory=static_dir), name="static")
 
 @app.get("/{full_path:path}")
 async def serve_frontend(full_path: str):
-    index_path = os.path.join(static_dir, "index.html")
-    return FileResponse(index_path)
+    if full_path.startswith("api") or full_path.startswith("static"):
+        return {"detail": "Not found"}, 404
+    return FileResponse(os.path.join(static_dir, "index.html"))
 
 # CORS Middleware
 app.add_middleware(
