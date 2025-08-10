@@ -12,7 +12,7 @@ const WeatherDisplay = () => {
     const { weather, locationDetails } = useAppContext();
     const { t } = useTranslation();
 
-    if (!weather || !locationDetails) {
+    if (!weather || !weather.forecast || weather.forecast.length === 0 || !locationDetails) {
         return <div className="text-right text-sm">{t('header.weather_prompt')}</div>;
     }
     const todayForecast = weather.forecast[0];
